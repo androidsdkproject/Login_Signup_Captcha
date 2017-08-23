@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="15sp"
+    android:paddingRight="10sp"
+    android:background="#ffffff"
+    tools:context="com.example.android1.login_signup_captcha.Login">
+
+        <TextView
+            android:drawablePadding="10sp"
+            android:paddingLeft="135sp"
+            android:gravity="center|start"
+            android:layout_marginTop="30sp"
+            android:background="@color/colorTextHint"
+            android:layout_width="match_parent"
+            android:text="SSO"
+            android:fontFamily="sans-serif"
+            android:textSize="17sp"
+            android:drawableLeft="@drawable/ic_mail_outline_black_24dp"
+            android:layout_height="50sp"
+             />
+    <TextView
+            android:fontFamily="sans-serif"
+            android:paddingLeft="5sp"
+            android:padding="15sp"
+            android:layout_marginTop="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:text="Email"
+            android:textSize="17sp"
+            />
+
+            <EditText
+                android:background="@drawable/edittext_custom_style"
+                android:padding="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:hint="Enter SSO Email"
+                android:lines="1"
+                android:drawablePadding="20sp"
+                android:drawableLeft="@drawable/ic_perm_identity_black_24dp"
+                android:textSize="18sp"
+                android:id="@+id/editemail"
+                android:fontFamily="sans-serif"
+                android:textColorHint="#ebb4bab7"
+                android:textColor="#ffffff"
+                 />
+
+
+    <TextView
+        android:fontFamily="sans-serif"
+        android:padding="15sp"
+        android:paddingLeft="5sp"
+        android:layout_marginTop="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:text="Password"
+        android:textSize="17sp"
+        />
+
+
+    <EditText
+                android:background="@drawable/edittext_custom_style"
+                android:padding="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:hint="Enter SSO Password"
+                android:lines="1"
+                android:textColorHint="#ebb4bab7"
+                android:drawablePadding="20sp"
+                android:drawableLeft="@drawable/ic_lock_black_24dp"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif"
+                android:inputType="textPassword"
+                android:id="@+id/editpassword"
+                android:textColor="#ffffff"
+                />
+
+    <LinearLayout
+        android:layout_marginTop="10sp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50sp">
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:src="@drawable/tick"
+            android:visibility="gone"
+            />
+        <ProgressBar
+            android:visibility="gone"
+            android:paddingStart="10sp"
+            android:layout_gravity="center"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:id="@+id/progressBar"
+            android:indeterminateDrawable="@drawable/circular_progress_bar"
+            android:paddingLeft="10sp" />
+        <CheckBox
+
+            android:button="@drawable/custom_checkbox"
+            android:id="@+id/box"
+            android:paddingStart="20sp"
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            android:fontFamily="sans-serif"
+            android:layout_width="200sp"
+            android:layout_height="50sp"
+            android:textSize="22sp"
+            android:text="I'm not a robot"
+            android:paddingLeft="20sp" />
+
+        <ImageView
+
+            android:id="@+id/image"
+            android:clickable="true"
+            android:src="@drawable/captcha"
+            android:layout_width="100sp"
+            android:layout_height="50sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_marginLeft="50sp"
+        android:layout_marginRight="50sp"
+        android:background="@color/colorTextHint"
+        android:layout_marginTop="20sp"
+        android:id="@+id/login"
+        android:text="SSO login"
+        android:fontFamily="sans-serif"
+        android:layout_width="match_parent"
+        android:layout_height="50sp" />
+
+        <TextView
+            android:layout_marginTop="20sp"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif"
+            android:layout_gravity="center"
+            android:textColor="@color/colorTextHint"
+            android:id="@+id/signup"
+            android:text="For Registration"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+</LinearLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:paddingBottom="20dp"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp"
+
+    tools:context=".Login">
+
+    <TextView
+        android:drawablePadding="10sp"
+        android:paddingLeft="135sp"
+        android:gravity="center|start"
+        android:layout_marginTop="10sp"
+        android:background="@color/colorTextHint"
+        android:layout_width="match_parent"
+        android:text="SSO"
+        android:fontFamily="sans-serif"
+        android:textSize="17sp"
+        android:drawableLeft="@drawable/ic_mail_outline_black_24dp"
+        android:layout_height="50sp"
+        />
+
+
+
+         <EditText
+             android:paddingLeft="15sp"
+             android:fontFamily="sans-serif"
+             android:layout_marginTop="30sp"
+             android:background="@drawable/edittext_custom_style"
+             android:layout_width="match_parent"
+             android:layout_height="50sp"
+             android:hint="Name"
+             android:textSize="18sp"
+             android:id="@+id/editname"
+             android:textColorHint="@color/textcolor"
+             android:textColor="#ffffff"
+             />
+         <EditText
+             android:paddingLeft="15sp"
+             android:fontFamily="sans-serif"
+             android:layout_marginTop="10sp"
+             android:background="@drawable/edittext_custom_style"
+             android:layout_width="match_parent"
+             android:layout_height="50sp"
+             android:hint="Email"
+             android:textSize="18sp"
+             android:id="@+id/editemail"
+             android:textColorHint="@color/textcolor"
+             android:textColor="#ffffff"
+             />
+
+
+
+
+         <EditText
+             android:paddingLeft="15sp"
+             android:fontFamily="sans-serif"
+             android:layout_marginTop="10sp"
+             android:background="@drawable/edittext_custom_style"
+             android:layout_width="match_parent"
+             android:layout_height="50sp"
+             android:hint="Password"
+             android:textSize="18sp"
+             android:inputType="textPassword"
+             android:id="@+id/editpassword"
+             android:textColorHint="@color/textcolor"
+             android:textColor="#ffffff"
+             />
+
+
+
+
+         <EditText
+             android:paddingLeft="15sp"
+             android:fontFamily="sans-serif"
+             android:layout_marginTop="10sp"
+             android:background="@drawable/edittext_custom_style"
+             android:layout_width="match_parent"
+             android:layout_height="50sp"
+             android:hint="Confirm Password"
+             android:inputType="textPassword"
+             android:textSize="18sp"
+             android:id="@+id/edit_confirm_pass"
+             android:textColorHint="@color/textcolor"
+             android:textColor="#ffffff"
+             />
+
+
+
+
+     <Button
+         android:layout_marginLeft="50sp"
+         android:layout_marginRight="50sp"
+         android:fontFamily="sans-serif"
+         android:layout_marginTop="30sp"
+         android:text="Register"
+         android:id="@+id/register"
+         android:background="@color/colorTextHint"
+         android:layout_width="match_parent"
+         android:layout_height="50sp"
+         />
+
+     <TextView
+         android:fontFamily="sans-serif"
+         android:layout_marginTop="20sp"
+         android:textSize="18sp"
+         android:layout_gravity="center"
+         android:textColor="@color/colorTextHint"
+         android:text="Already a Member?Login"
+         android:clickable="true"
+         android:id="@+id/login_1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />
+
+</LinearLayout>
